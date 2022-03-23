@@ -53,7 +53,7 @@ body {
   background: #e7e7e7;
   padding: 20px;
   color: #141414;
-  box-shadow: #2c2c2c -13px 23px;
+  box-shadow: #d62e2e -13px 23px;
 }
 .lista ul {
   background: #c8c8c8;
@@ -101,8 +101,6 @@ body {
   padding: 30px 100px 40px 40px;
   max-width: 430px;
   max-height: 140px;
-  max-width: 430px;
-  max-height: 140px;
 }
 .sobre span {
   position: relative;
@@ -112,4 +110,31 @@ body {
   padding: 8px;
   top: -20px;
   right: -410px;
+}
+.projetos h1 {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+.projetos-inicio {
+  background: #2c2c2c;
+  color: white;
+}
+.projetos-inicio h2 {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 35px;
+  color: white;
+}
+.projetos-inicio p {
+  text-align: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
 }
