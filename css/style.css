@@ -7,134 +7,88 @@
 }
 body {
   height: 4000px;
-  background: #f7f7f7;
+  background: #f1f1f1;
 }
 
 /*============HEADER|NAVEGAÇÃO============*/
 
 .header {
-  background: #c8c8c8;
+  background: #2c2c2c;
   display: flex;
   justify-content: space-around;
-  padding: 30px;
+  padding: 20px;
   align-items: center;
+  gap: 300px;
 }
 .navegacao ul {
   display: flex;
   gap: 60px;
 }
 .navegacao ul li a {
-  color: #141414;
+  color: #ffffff;
   font-size: 1.13rem;
-}
-.navegacao ul li a:hover {
-  color: white;
-}
-.bemVindo {
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 70px;
 }
 
 /*============HEADER|NAVEGAÇÃO/FIM============*/
 
 /*=================INTRODUÇÃO=================*/
 
-/*=====LISTA=====*/
-
 .introducao {
+  background: url(/img/banner.png) center no-repeat;
+  width: 100%;
+  height: 336px;
+  background-size: cover;
+}
+.content {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-around;
+  color: white;
 }
-.lista h2 {
-  font-weight: normal;
-  background: #e7e7e7;
-  padding: 20px;
-  color: #141414;
-  box-shadow: #d62e2e -13px 23px;
-}
-.lista ul {
-  background: #c8c8c8;
-  /* padding-left: 15px;
-  padding-bottom: 20px;
-  padding-top: 15px;
-  padding-right: 100px; */
-  padding: 15px 150px 25px 35px;
-  box-shadow: #2c2c2c -13px 13px;
-}
-.lista ul li {
-  color: #2c2c2c;
-  font-size: 18px;
-  font-weight: normal;
-  padding: 7px;
-  /* background: red; */
-}
-.lista ul li + li::before {
-  content: "";
-  display: block;
-  /* width: 120px; */
-  width: calc();
-  height: 1px;
-  margin-bottom: 20px;
-  background: #2c2c2c;
-}
-
-/*=====LISTA/FIM=====*/
-
-/*=====SOBRE=====*/
-
 .sobre {
-  position: relative;
+  font-size: 14px;
+  margin-top: 150px;
 }
-.subtitulo {
+.sobre h1 {
   font-size: 64px;
-  color: #2c2c2c;
-  margin-left: 30px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
 }
 .sobre p {
-  color: #2c2c2c;
-  font-size: 14px;
-  margin-top: 15px;
-  background: #e7e7e7;
-  padding: 30px 100px 40px 40px;
-  max-width: 430px;
-  max-height: 140px;
-}
-.sobre span {
-  position: relative;
-  background: #d62e2e;
-  color: #ffffff;
-  font-weight: bold;
-  padding: 8px;
-  top: -20px;
-  right: -410px;
-}
-.projetos h1 {
-  margin-top: 100px;
-  margin-bottom: 60px;
-}
-.projetos-inicio {
   background: #2c2c2c;
-  color: white;
+  border: 5px solid #252525;
+  max-width: 430px;
+  padding: 25px 70px 20px 30px;
 }
-.projetos-inicio h2 {
+.sobre h1::before {
+  content: "";
+  width: 70px;
+  height: 35px;
+  background: #d62e2e;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: -6px;
+  z-index: -1;
+}
+.tabela {
+  margin-top: 140px;
+}
+.tabela h3 {
   font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  padding-top: 35px;
-  color: white;
 }
-.projetos-inicio p {
+.tabela ul {
+  background: #2c2c2c;
+  border: 5px solid #252525;
   text-align: center;
-  padding: 20px;
-  max-width: 400px;
-  margin: 0 auto;
-  font-size: 16px;
+  padding: 25px 50px 25px 50px;
+  font-size: 20px;
+  font-weight: bold;
 }
-.nav ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
+.tabela ul li + li {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 3px solid #252525;
 }
+
+/*===============INTRODUÇÃO/FIM===============*/ ;
