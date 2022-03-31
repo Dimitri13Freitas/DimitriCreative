@@ -38,6 +38,7 @@ body {
   width: 100%;
   height: 336px;
   background-size: cover;
+  margin-bottom: 455px;
 }
 .content {
   display: flex;
@@ -60,6 +61,7 @@ body {
   border: 5px solid #252525;
   max-width: 430px;
   padding: 20px 70px 20px 30px;
+  font-weight: 300;
 }
 .sobre h1::before {
   content: "";
@@ -107,17 +109,44 @@ body {
   padding-bottom: 25px;
 }
 .sobre-dev {
-  margin-top: 40px;
+  margin-top: 30px;
   background: #2c2c2c;
   border: 5px solid #252525;
+  position: relative;
 }
 .sobre-dev p {
   background: none;
   border: none;
+  font-size: 16px;
+  font-weight: 300;
 }
 .sobre-dev h2 {
   font-size: 32px;
   max-width: 350px;
+  margin-left: 30px;
+  margin-top: 15px;
+  z-index: 1;
+  position: relative;
+}
+.sobre-dev h2::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 20px;
+  background: #d62e2e;
+  position: absolute;
+  z-index: -1;
+  top: 16px;
+  left: -5px;
+}
+.sobre-dev span {
+  font-size: 14px;
+  font-weight: bold;
+  background: #d62e2e;
+  padding: 5px 12px;
+  position: absolute;
+  right: -10px;
+  top: 240px;
 }
 
 /*===============INTRODUÇÃO/FIM===============*/ ;
