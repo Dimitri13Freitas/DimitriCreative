@@ -34,7 +34,7 @@ body {
 /*=================INTRODUÇÃO=================*/
 
 .introducao {
-  background: url(/img/banner.png) center no-repeat;
+  background: url(./img/banner.png) center no-repeat;
   width: 100%;
   height: 336px;
   background-size: cover;
