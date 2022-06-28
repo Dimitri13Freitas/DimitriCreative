@@ -6,19 +6,42 @@
   list-style: none;
 }
 body {
-  background-color: var(--cor-p5);
+  background-color: var(--cor-p6);
   font-family: "Inter", Arial, Helvetica, sans-serif;
   padding-bottom:300px;
 }
+
 /* Cores */
 :root {
   --cor-p1:#FF5C00;
   --cor-p2:#F16529;
   --cor-p3:#ffffff;
   --cor-p4:#f7f7f7;
-  --cor-p5:#2b2b2b;
-  --cor-p6:#141414;
-  --cor-p7:#b6b6b6;
+  --cor-p5:#b6b6b6;
+  --cor-p6:#2b2b2b;
+  --cor-p7:#141414;
+  --cor-p8:#222222;
+}
+.cor1 {
+  color:var(--cor-p1);
+}
+.cor2 {
+  color:var(--cor-p2);
+}
+.cor3 {
+  color:var(--cor-p3);
+}
+.cor4 {
+  color:var(--cor-p4);
+}
+.cor5 {
+  color:var(--cor-p5);
+}
+.cor6 {
+  color:var(--cor-p6);
+}
+.cor7 {
+  color:var(--cor-p7);
 }
 
 /* Header */
@@ -28,14 +51,11 @@ body {
   align-items: center;
   padding:40px 0;
   gap:100px;
-  background:var(--cor-p6);
+  background:var(--cor-p7);
 }
 .navegacao ul{
   display: flex;
   gap:40px;
-}
-.navegacao ul li a {
-  color: var(--cor-p4);
 }
 
 /* Container */
@@ -43,6 +63,8 @@ body {
   max-width:1100px;
   margin: 0 auto;
 }
+
+/* Introdução */
 .introducao-content {
   margin-top:60px;
   display: flex;
@@ -67,13 +89,48 @@ body {
 }
 .redes-txt {
   margin-top:20px;
-  color:var(--cor-p7);
+  color:var(--cor-p5);
 }
 .redes-txt a {
-  color:var(--cor-p7);
+  color:var(--cor-p5);
   transition:0.2s;
 }
 .redes-txt a:hover {
   text-decoration:underline;
   color:var(--cor-p2);
 }
+.habilidades-content {
+  margin-top:100px;
+}
+.subtitulo {
+  color:var(--cor-p4);
+  font-size: 48px;
+  max-width:350px;
+  position: relative;
+}
+.subtitulo::before {
+  content:'';
+  width:230px;
+  height:156px;
+  position:absolute;
+  transform: rotate(90deg);
+  z-index: -1;
+  top:30px;
+  right: 225px;
+  background-image: url(/img/assets/asset1.png);
+}
+/* .habilidades-content {
+  display: flex;
+  justify-content: center;
+  gap:20px;
+} */
+/* .habilidades-content h2 {
+  justify-self: left;
+} */
+/* .habilidades-content img{
+  margin-top:40px;
+  padding:18px;
+  background-color: var(--cor-p8);
+  border-radius:20px;
+  border:solid var(--cor-p7) 1px;
+} */
