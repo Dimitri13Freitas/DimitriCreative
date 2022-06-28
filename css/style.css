@@ -119,18 +119,17 @@ body {
   right: 225px;
   background-image: url(/img/assets/asset1.png);
 }
-/* .habilidades-content {
+.habilidades-content {
   display: flex;
-  justify-content: center;
-  gap:20px;
-} */
-/* .habilidades-content h2 {
-  justify-self: left;
-} */
-/* .habilidades-content img{
-  margin-top:40px;
+}
+.habilidades-content-img img {
   padding:18px;
   background-color: var(--cor-p8);
   border-radius:20px;
   border:solid var(--cor-p7) 1px;
-} */
+}
+.habilidades-content-img {
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+}
