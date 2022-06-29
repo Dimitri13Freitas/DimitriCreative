@@ -52,10 +52,27 @@ body {
   padding:40px 0;
   gap:100px;
   background:var(--cor-p7);
+  flex-wrap: wrap;
 }
 .navegacao ul{
   display: flex;
   gap:40px;
+}
+.navegacao ul li a{
+  position:relative;
+}
+.navegacao ul li a::after {
+  content: '';
+  display: block;
+  margin-top: 3px;
+  width:0px;
+  height: 2px;
+  background-color: var(--cor-p2);
+  position:absolute;
+  transition:0.3s;
+}
+.navegacao ul li a:hover:after {
+  width:100%;
 }
 
 /* Container */
@@ -69,10 +86,14 @@ body {
   margin-top:60px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+.introducao-content img{
+  overflow: hidden;
 }
 .introducao-content h1{
   font-size:64px;
-  max-width:500px;
+  max-width:481px;
   color:var(--cor-p4);
   position: relative;
   z-index: 1;
@@ -89,18 +110,13 @@ body {
 }
 .redes-txt {
   margin-top:20px;
-  color:var(--cor-p5);
 }
 .redes-txt a {
-  color:var(--cor-p5);
   transition:0.2s;
 }
 .redes-txt a:hover {
   text-decoration:underline;
   color:var(--cor-p2);
-}
-.habilidades-content {
-  margin-top:100px;
 }
 .subtitulo {
   color:var(--cor-p4);
@@ -119,17 +135,51 @@ body {
   right: 225px;
   background-image: url(/img/assets/asset1.png);
 }
+
+/* Habilidades */
+.habilidades-content {
+  margin-top: 120px;
+}
 .habilidades-content {
   display: flex;
 }
-.habilidades-content-img img {
-  padding:18px;
+.habilidades-content-skill div p {
+  text-align: center;
+  color:white;
+  opacity: 0;
+  max-width: 100px;
+  transition: 0.3s;
+}
+.habilidades-content-skill div:hover p{
+  opacity: 1;
+}
+.habilidades-content-skill div {
+  transition: 0.3s;
+}
+.habilidades-content-skill div:hover {
+  transform: translateY(-8px);
+}
+.habilidades-content-skill img {
+  padding:17px;
   background-color: var(--cor-p8);
   border-radius:20px;
   border:solid var(--cor-p7) 1px;
+  transition: 0.3s;
 }
-.habilidades-content-img {
+.habilidades-content-skill {
   display: flex;
   gap:20px;
   flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+.habilidades-content-skill::after {
+  content: '';
+  width:1158px;
+  height:370px;
+  background-image: url(/img/assets/bg.png);
+  z-index: -2;
+  position: absolute;
+  right: -80px;
+  top:-65px;
 }
