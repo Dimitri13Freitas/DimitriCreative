@@ -159,6 +159,7 @@ body {
   padding:10px 0;
   position:relative;
   margin-left:20px;
+  margin-bottom:25px;
 }
 .sobre-txt p::before {
   content:'';
@@ -170,7 +171,6 @@ body {
   left:-15px;
 }
 .btn-bio {
-  margin-top:20px;
   display: flex;
   gap:20px;
 }
@@ -184,7 +184,7 @@ body {
   transition:0.3s ease-in-out;
 }
 .btn-bio a:hover {
-  border-image: linear-gradient(20deg, var(--cor-p6), var(--cor-p7), var(--cor-p6) 100%) 1;
+  border-image: linear-gradient(20deg, var(--cor-p6), var(--cor-p5), var(--cor-p6) 100%) 1;
 }
 
 /* Habilidades */
@@ -233,7 +233,7 @@ body {
 }
 
 /* Projetos */
-/* .projeto {
+.projeto {
   background-color: var(--cor-p8);
 }
 .projetos-content h2{
@@ -242,13 +242,25 @@ body {
 }
 .projeto {
   border: 3px solid;
-
   border-image: linear-gradient(20deg, var(--cor-p7), var(--cor-p6), var(--cor-p7) 100%) 1;
+  padding:20px 35px;
 }
+/* .projeto:hover {
+  border-image: linear-gradient(20deg, var(--cor-p6), var(--cor-p5), var(--cor-p6) 100%) 1;
+} */
 .projeto h3 {
   font-weight: normal;
   font-size: 32px;
 }
 .projeto p {
-  max-width:404px;
-} */
+  max-width:400px;
+}
+.projeto ul {
+  display: flex;
+  gap:20px;
+}
+.projetos {
+  display:flex;
+  justify-content: center;
+  gap:40px;
+}
