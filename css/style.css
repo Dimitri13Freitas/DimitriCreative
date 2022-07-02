@@ -21,6 +21,7 @@ body {
   --cor-p6:#2b2b2b;
   --cor-p7:#141414;
   --cor-p8:#222222;
+  --cor-p9:#1b1b1b;
 }
 .cor1 {
   color:var(--cor-p1);
@@ -61,6 +62,15 @@ body {
   top:30px;
   right: 225px;
   background-image: url(/img/assets/asset1.png);
+}
+.btn {
+  transition:0.3s ease-in-out;
+  border: 2px solid;
+  border-image: linear-gradient(20deg, var(--cor-p7), var(--cor-p6), var(--cor-p7) 100%) 1;
+  background-color: var(--cor-p8);
+}
+.btn:hover {
+  border-image: linear-gradient(20deg, var(--cor-p6), var(--cor-p5), var(--cor-p6) 100%) 1;
 }
 
 /* Header */
@@ -175,16 +185,8 @@ body {
   gap:20px;
 }
 .btn-bio a{
-  display: block;
   font-size:18px;
   padding:10px 35px;
-  background-color: var(--cor-p8);
-  border: 2px solid;
-  border-image: linear-gradient(20deg, var(--cor-p7), var(--cor-p6), var(--cor-p7) 100%) 1;
-  transition:0.3s ease-in-out;
-}
-.btn-bio a:hover {
-  border-image: linear-gradient(20deg, var(--cor-p6), var(--cor-p5), var(--cor-p6) 100%) 1;
 }
 
 /* Habilidades */
@@ -238,29 +240,59 @@ body {
 }
 .projetos-content h2{
   font-size: 64px;
-  margin-bottom:170px;
+  margin-bottom:120px;
+}
+.projetos {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:50px;
 }
 .projeto {
   border: 3px solid;
   border-image: linear-gradient(20deg, var(--cor-p7), var(--cor-p6), var(--cor-p7) 100%) 1;
   padding:20px 35px;
+  transition: 0.3s;
 }
-/* .projeto:hover {
+.projeto:hover {
   border-image: linear-gradient(20deg, var(--cor-p6), var(--cor-p5), var(--cor-p6) 100%) 1;
-} */
+}
+.projeto:hover p{
+  color:var(--cor-p4);
+}
+.projeto:hover ul{
+  color:var(--cor-p4);
+}
 .projeto h3 {
   font-weight: normal;
   font-size: 32px;
+  margin-bottom:8px; 
 }
 .projeto p {
   max-width:400px;
+  margin-bottom:15px;
+  transition: 0.3s;
 }
 .projeto ul {
   display: flex;
-  gap:20px;
+  gap:10px;
+  padding:5px 10px;
+  border-radius: 5px;
+  border:1px var(--cor-p2) solid;
+  background: linear-gradient(270.01deg, var(--cor-p8) 0.01%, var(--cor-p7) 140.84%);
 }
-.projetos {
+.linguagens-projetos {
   display:flex;
-  justify-content: center;
-  gap:40px;
+  align-items: center;
+  justify-content: space-between;
+  gap:10px;
+}
+.linguagens-projetos a {
+  font-size: 14px;
+  padding:5px 10px;
+  background-color: var(--cor-p9);
+  border-image: linear-gradient(20deg, var(--cor-p7), var(--cor-p8), var(--cor-p7) 100%) 1;
+}
+.linguagens-projetos a:hover {
+  border-image: linear-gradient(20deg, var(--cor-p8), var(--cor-p7), var(--cor-p8) 100%) 1;
 }
