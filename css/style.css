@@ -22,6 +22,7 @@ body {
   --cor-p7:#141414;
   --cor-p8:#222222;
   --cor-p9:#1b1b1b;
+  --cor-10:#a0a0a0;
 }
 .cor1 {
   color:var(--cor-p1);
@@ -43,6 +44,9 @@ body {
 }
 .cor7 {
   color:var(--cor-p7);
+}
+.cor10 {
+  color:var(--cor-10);
 }
 
 /* Utilitário*/
@@ -88,16 +92,15 @@ body {
   gap:40px;
 }
 .navegacao ul li a{
-  position:relative;
+  padding: 35px 0;
 }
 .navegacao ul li a::after {
   content: '';
   display: block;
   margin-top: 3px;
-  width:0px;
+  width:0;
   height: 2px;
   background-color: var(--cor-p2);
-  position:absolute;
   transition:0.3s;
 }
 .navegacao ul li a:hover:after {
@@ -226,8 +229,8 @@ body {
 .habilidades-content-skill::after { /* BG */
   content: '';
   width:1158px;
-  height:707px;
-  background-image: url(/img/assets/bg1.png);
+  height:1200px;
+  background-image: url(/img/assets/bg.png);
   z-index: -2;
   position: absolute;
   right: -80px;
@@ -237,6 +240,9 @@ body {
 /* Projetos */
 .projeto {
   background-color: var(--cor-p8);
+}
+.projetos-content {
+  margin-bottom:150px;
 }
 .projetos-content h2{
   font-size: 64px;
@@ -255,7 +261,8 @@ body {
   transition: 0.3s;
 }
 .projeto:hover {
-  border-image: linear-gradient(20deg, var(--cor-p6), var(--cor-p5), var(--cor-p6) 100%) 1;
+  border-image: linear-gradient(20deg, var(--cor-p8), var(--cor-p7), var(--cor-p8) 100%) 1;
+  transform: scale(1.01);
 }
 .projeto:hover p{
   color:var(--cor-p4);
@@ -294,5 +301,37 @@ body {
   border-image: linear-gradient(20deg, var(--cor-p7), var(--cor-p8), var(--cor-p7) 100%) 1;
 }
 .linguagens-projetos a:hover {
-  border-image: linear-gradient(20deg, var(--cor-p8), var(--cor-p7), var(--cor-p8) 100%) 1;
+  border-image: linear-gradient(20deg, var(--cor-p6), var(--cor-p5), var(--cor-p6) 100%) 1;
+}
+
+/* Formação */
+.formacao-container {
+  margin-top:80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:100px;
+}
+.formacao-container h3 {
+  text-align: center;
+  max-width: 370px;
+  min-width: 370px;
+  font-size: 24px;
+  margin-bottom:20px;
+}
+.formacao-container div img {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+.formacao-container div h3::after {
+  content:'';
+  display: block;
+  width:70px;
+  height: 3px;
+  margin:10px auto;
+  background-color: var(--cor-p2);
+}
+.formacao-container div p {
+  text-align: center;
 }
