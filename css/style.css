@@ -45,6 +45,9 @@ body {
 .cor7 {
   color:var(--cor-p7);
 }
+.cor9 {
+  color:var(--cor-p9);
+}
 .cor10 {
   color:var(--cor-10);
 }
@@ -229,8 +232,8 @@ body {
 .habilidades-content-skill::after { /* BG */
   content: '';
   width:1158px;
-  height:1200px;
-  background-image: url(/img/assets/bg.png);
+  height:1242px;
+  background-image: url(/img/assets/bg4.png);
   z-index: -2;
   position: absolute;
   right: -80px;
@@ -305,6 +308,9 @@ body {
 }
 
 /* Formação */
+.formacao {
+  margin-bottom:150px;
+}
 .formacao-container {
   margin-top:80px;
   display: flex;
@@ -334,4 +340,17 @@ body {
 }
 .formacao-container div p {
   text-align: center;
+}
+
+/* Experiência Profissional */
+.experiencia {
+  display: flex;
+  align-items: flex-end;
+}
+.experiencia p {
+  border-bottom: var(--cor-p2) 2px solid;
+}
+.experiencia div {
+  display: flex;
+  gap:5px;
 }
