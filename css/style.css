@@ -67,7 +67,7 @@ body {
   z-index: -1;
   top:30px;
   right: 225px;
-  background-image: url(../img/assets/asset1.png);
+  background-image: url("../img/assets/asset1.png");
 }
 .btn {
   transition:0.3s ease-in-out;
@@ -129,17 +129,6 @@ body {
   max-width:480px;
   position: relative;
   z-index: 1;
-}
-.introducao-content h1::after{
-  content:'';
-  width:230px;
-  height:156px;
-  left:335px;
-  bottom:25px;
-  z-index:-1;
-  position:absolute;
-  background-image: url(../img/assets/asset1.png);
-  overflow: hidden;
 }
 .redes-txt {
   margin-top:20px;
@@ -229,7 +218,7 @@ body {
   content: '';
   width:1158px;
   height:1242px;
-  background-image: url(../img/assets/bg4.png);
+background-image: url("../img/assets/bg4.png");
   z-index: -2;
   position: absolute;
   right:-80px;
