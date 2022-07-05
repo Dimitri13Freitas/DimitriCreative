@@ -217,8 +217,8 @@ body {
 .habilidades-content-skill::after { /* BG */
   content: '';
   width:1158px;
-  height:1242px;
-background-image: url("../img/assets/bg4.png");
+  height:1452px;
+  background-image: url("../img/assets/bg5.png");
   z-index: -2;
   position: absolute;
   right:-80px;
