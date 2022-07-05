@@ -67,7 +67,7 @@ body {
   z-index: -1;
   top:30px;
   right: 225px;
-  background-image: url(img/assets/asset1.png);
+  background-image: url(../img/assets/asset1.png);
 }
 .btn {
   transition:0.3s ease-in-out;
@@ -138,7 +138,7 @@ body {
   bottom:25px;
   z-index:-1;
   position:absolute;
-  background-image: url(img/assets/asset1.png);
+  background-image: url(../img/assets/asset1.png);
   overflow: hidden;
 }
 .redes-txt {
@@ -229,7 +229,7 @@ body {
   content: '';
   width:1158px;
   height:1242px;
-  background-image: url(img/assets/bg4.png);
+  background-image: url(../img/assets/bg4.png);
   z-index: -2;
   position: absolute;
   right:-80px;
